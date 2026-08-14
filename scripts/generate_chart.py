@@ -3,7 +3,7 @@ import re
 
 # Color codes
 EASY_COLOR = "#2ea44f"   # Green
-MED_COLOR = "#d97706"    # Orange
+MEDIUM_COLOR = "#d97706"    # Orange
 HARD_COLOR = "#dc2626"   # Red
 
 CATEGORIES = [
@@ -19,7 +19,7 @@ CATEGORIES = [
 ]
 
 def scan_repository():
-    stats = {cat: {"easy": 0, "med": 0, "hard": 0} for cat in CATEGORIES}
+    stats = {cat: {"easy": 0, "medium": 0, "hard": 0} for cat in CATEGORIES}
     
     for cat in CATEGORIES:
         if not os.path.exists(cat):
@@ -30,7 +30,7 @@ def scan_repository():
                 if filename.startswith("easy_"):
                     stats[cat]["easy"] += 1
                 elif filename.startswith("med_") or filename.startswith("medium_"):
-                    stats[cat]["med"] += 1
+                    stats[cat]["medium"] += 1
                 elif filename.startswith("hard_"):
                     stats[cat]["hard"] += 1
 
