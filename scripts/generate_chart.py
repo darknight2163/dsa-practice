@@ -60,7 +60,7 @@ def generate_svg(stats):
 
     for cat in CATEGORIES:
         e = stats[cat]["easy"]
-        m = stats[cat]["med"]
+        m = stats[cat]["medium"]
         h = stats[cat]["hard"]
         
         e_w, m_w, h_w = e * scale, m * scale, h * scale
