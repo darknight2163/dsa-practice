@@ -1,0 +1,39 @@
+<svg width="700" height="450" viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="700" height="450" fill="#ffffff" />
+<text x="20" y="28" font-size="18" font-weight="600" fill="#24292f">DSA Topic Breakdown</text>
+<rect x="440" y="16" width="12" height="12" rx="2" fill="#2ea44f" />
+<text x="456" y="26" font-size="12" fill="#57606a">Easy</text>
+<rect x="500" y="16" width="12" height="12" rx="2" fill="#d97706" />
+<text x="516" y="26" font-size="12" fill="#57606a">Medium</text>
+<rect x="580" y="16" width="12" height="12" rx="2" fill="#dc2626" />
+<text x="596" y="26" font-size="12" fill="#57606a">Hard</text>
+<text x="20" y="94.0" font-size="13" fill="#24292f">arrays</text>
+<rect x="180" y="82.0" width="400" height="16" rx="4" fill="#e5e7eb" />
+<rect x="180.0" y="82.0" width="400.0" height="16" fill="#2ea44f" />
+<text x="590.0" y="94.0" font-size="12" fill="#57606a">2</text>
+<text x="20" y="134.0" font-size="13" fill="#24292f">sliding-window</text>
+<rect x="180" y="122.0" width="200" height="16" rx="4" fill="#e5e7eb" />
+<rect x="180.0" y="122.0" width="200.0" height="16" fill="#d97706" />
+<text x="390.0" y="134.0" font-size="12" fill="#57606a">1</text>
+<text x="20" y="174.0" font-size="13" fill="#24292f">hashmap</text>
+<rect x="180" y="162.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="174.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="214.0" font-size="13" fill="#24292f">string</text>
+<rect x="180" y="202.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="214.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="254.0" font-size="13" fill="#24292f">bit-manipulation</text>
+<rect x="180" y="242.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="254.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="294.0" font-size="13" fill="#24292f">binary-search</text>
+<rect x="180" y="282.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="294.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="334.0" font-size="13" fill="#24292f">stack</text>
+<rect x="180" y="322.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="334.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="374.0" font-size="13" fill="#24292f">sorting+greedy</text>
+<rect x="180" y="362.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="374.0" font-size="12" fill="#57606a">0</text>
+<text x="20" y="414.0" font-size="13" fill="#24292f">linked-list</text>
+<rect x="180" y="402.0" width="6" height="16" rx="4" fill="#e5e7eb" />
+<text x="194.0" y="414.0" font-size="12" fill="#57606a">0</text>
+</svg>
