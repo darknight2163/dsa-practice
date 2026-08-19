@@ -1,0 +1,217 @@
+DSA PRACTICE NOTES — TOPIC-WISE, DIFFICULTY-TIERED
+(Difficulty shown for standard SWE interviews. Notes added where AI/ML
+interviews tend to treat a problem as harder or lower priority.)
+================================================================
+
+1. ARRAY
+----------------
+[EASY]
+- Two Sum
+  Understanding: Hashing for fast lookup.
+  Why important: Introduces O(n) optimization using hashmap instead of brute force O(n^2).
+
+- Best Time to Buy and Sell Stock
+  Understanding: Tracking min value and maximizing profit.
+  Why important: Teaches greedy thinking + single pass optimization.
+
+- Move Zeroes
+  Understanding: In-place array manipulation.
+  Why important: Builds two-pointer technique basics.
+
+- Majority Element (Boyer-Moore Voting Algorithm)
+  Understanding: Frequency without extra space.
+  Why important: Powerful example of optimal O(1) space algorithm.
+
+- Find Pivot Index
+  Understanding: Prefix sums.
+  Why important: Builds balance-based thinking.
+
+[MEDIUM]
+- Best Time to Buy and Sell Stock II
+  Understanding: Multiple transactions.
+  Why important: Introduces greedy accumulation strategy.
+
+- Product of Array Except Self
+  Understanding: Prefix & suffix multiplication.
+  Why important: Avoids division -> important constraint handling.
+
+- Maximum Sum Subarray (Kadane's Algorithm)
+  Understanding: Local vs global maximum.
+  Why important: One of the most important DSA patterns.
+  AI/ML note: Expected to be near-instant; be ready to justify why greedy works.
+
+- Maximum Product Subarray
+  Understanding: Handling negatives.
+  Why important: Extends Kadane's -> edge case mastery.
+  AI/ML note: Same bump in expected speed as above; sign-flip edge cases trip people up.
+
+
+2. SLIDING WINDOW
+----------------
+[EASY]
+- Maximum Sum Subarray of Size K
+  Understanding: Fixed window.
+  Why important: Introduces window optimization.
+
+- Maximum Average Subarray
+  Understanding: Tracking max average via window sum.
+  Why important: Builds efficient rolling computation.
+
+- Max Consecutive Ones
+  Understanding: Simple window/counting.
+  Why important: Builds intuition for binary array problems.
+
+[MEDIUM]
+- Longest Substring Without Repeating Characters
+  Understanding: Dynamic window resizing.
+  Why important: Core of variable sliding window problems.
+
+- Longest Repeating Character Replacement
+  Understanding: Frequency + window shrink.
+  Why important: Teaches constraint-based window control.
+
+- Number of Sub-arrays of Size K and Average >= Threshold
+  Understanding: Window sum updates.
+  Why important: Reinforces add-right, remove-left pattern.
+
+- Minimum Size Subarray Sum
+  Understanding: Expand & shrink window.
+  Why important: Builds intuition for dynamic window sizing.
+
+- Permutation in String
+  Understanding: Frequency matching.
+  Why important: Combines hashmap + sliding window.
+
+AI/ML note: This whole category tends to run harder than it "should" for
+ML-track candidates, since sliding window isn't drilled as often as it is
+on pure SWE tracks.
+
+
+3. HASHMAP PATTERNS (Interview Favorite)
+----------------
+[EASY]
+- Contains Duplicate
+  Understanding: Set usage.
+  Why important: Fast lookup pattern.
+
+- First Unique Character in a String
+  Understanding: Frequency counting.
+  Why important: Builds counting logic.
+
+[MEDIUM]
+- Subarray Sum Equals K
+  Understanding: Prefix sum + hashmap.
+  Why important: VERY IMPORTANT pattern used in many problems.
+  Note: Common stumble even for strong coders — prioritize this one.
+
+- Top K Frequent Elements
+  Understanding: Heap / bucket sort.
+  Why important: Used in real-world ranking systems.
+
+
+4. STRING
+----------------
+[EASY]
+- Is Subsequence
+  Understanding: Two-pointer traversal.
+  Why important: Simple but tests attention to detail.
+
+- Valid Palindrome
+  Understanding: Two-pointer check.
+  Why important: Common in text processing.
+
+- Valid Anagram
+  Understanding: Frequency comparison.
+  Why important: Core hashing/string logic.
+
+- Longest Common Prefix
+  Understanding: Prefix comparison.
+  Why important: Useful in search systems.
+
+[MEDIUM]
+- Reverse Words In a String
+  Understanding: String manipulation.
+  Why important: Tests clean coding and edge cases.
+
+- Group Anagrams
+  Understanding: Hashing with sorted keys.
+  Why important: Classic pattern grouping problem.
+
+
+5. BIT MANIPULATION
+----------------
+[EASY]
+- Single Number
+  Understanding: XOR trick.
+  Why important: Elegant O(1) space solution.
+
+- Counting Bits
+  Understanding: DP + bit logic.
+  Why important: Builds binary intuition.
+
+AI/ML note: Bit tricks are the single weakest area for most ML-track
+candidates — treat this whole section as medium-hard for that track even
+though it's objectively easy for SWE.
+
+
+6. BINARY SEARCH
+----------------
+[EASY]
+- Binary Search
+  Understanding: Divide and conquer.
+  Why important: Must-know core algorithm.
+
+- First Bad Version
+  Understanding: Search space reduction.
+  Why important: Teaches boundary conditions.
+
+
+7. STACK
+----------------
+[EASY]
+- Valid Parenthesis
+  Understanding: Stack push/pop.
+  Why important: Fundamental LIFO structure.
+
+
+8. SORTING + GREEDY
+----------------
+[MEDIUM]
+- Sort Colors (Dutch National Flag)
+  Understanding: 3-pointer partition.
+  Why important: Very common in-place sorting problem.
+
+- Merge Intervals
+  Understanding: Sorting + merging logic.
+  Why important: Used in calendar systems, scheduling.
+  AI/ML note: Comes up as a "practical" warm-up, e.g. merging time windows
+  for data pipelines — higher priority than its difficulty suggests.
+
+
+9. LINKED LIST
+----------------
+[EASY]
+- Reverse Linked List
+  Understanding: Pointer manipulation.
+  Why important: Tests core understanding of memory.
+
+- Merge Two Sorted Lists
+  Understanding: Iterative merging.
+  Why important: Foundation for merge sort logic.
+
+AI/ML note: Linked-list questions overall are rarer in ML interviews than
+pure SWE ones — don't over-invest here unless the interviewer leans
+classic-CS.
+
+
+================================================================
+PRIORITY FOR AI/ML APPLICATION INTERVIEWS
+================================================================
+Focus first on: Subarray Sum Equals K, Kadane's (both versions),
+Top K Frequent Elements, and Merge Intervals — these map to real patterns
+in data processing (windowed aggregation, frequency ranking, interval
+merging) that ML interviewers like to sneak in as "practical" coding
+rounds.
+
+Lower priority unless the company is known for CS-fundamentals-heavy
+loops: bit manipulation and pure linked-list pointer puzzles.
