@@ -8,15 +8,15 @@ MUTED_COLOR = "#57606a"
 TRACK_COLOR = "#e5e7eb"
 
 CATEGORIES = [
-    "arrays",
-    "sliding-window",
-    "hashmap",
-    "string",
-    "bit-manipulation",
-    "binary-search",
-    "stack",
-    "sorting+greedy",
-    "linked-list",
+    "01.arrays",
+    "02.sliding-window",
+    "03.hashmap",
+    "04.string",
+    "05.bit-manipulation",
+    "06.binary-search",
+    "07.stack",
+    "08.sorting+greedy",
+    "09.linked-list",
 ]
 
 
@@ -115,8 +115,8 @@ def generate_svg(stats):
 
     svg_lines.append("</svg>")
 
-    os.makedirs("assets", exist_ok=True)
-    with open("assets/progress.svg", "w") as f:
+    os.makedirs(".github/assets", exist_ok=True)
+    with open(".github/assets/progress.svg", "w") as f:
         f.write("\n".join(svg_lines))
 
 

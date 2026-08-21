@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'assets/**'
+      - '.github/assets/**'
       - '.github/workflows/**'
       - 'README.md'
 
@@ -24,11 +24,11 @@ jobs:
           python-version: '3.x'
 
       - name: Generate SVG Progress Chart
-        run: python assets/generate_chart.py
+        run: python .github/assets/generate_chart.py
 
       - name: Commit and Push SVG Update
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/progress.svg
+          git add .github/assets/progress.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update progress chart SVG" && git push)
