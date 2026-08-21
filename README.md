@@ -12,21 +12,21 @@ A personal collection of Data Structures and Algorithms problems, solved and org
 
 ## Structure
 
-Every [topic](/assets/topics.txt) gets its own folder. Inside, files are named by difficulty and a running number, so it stays easy to scan and sort.
+Every [topic](/topics.txt) gets its own folder. Inside, files are named by difficulty and a running number, so it stays easy to scan and sort.
 
 ```
 dsa-practice/
-├── Arrays/
+├── 01.arrays/
 │   ├── easy_001_two_sum.py
 │   ├── med_002_product_except_self.py
-│   └── hard_003_trapping_rain_water.py
-├── Strings/
-├── HashMap/
-├── SlidingWindow/
-├── LinkedList/
-├── Stack/
-├── BinarySearch/
-└── ...
+│   └── med_003_product_of_array_except_itself.py
+├── 02.sliding-window/
+├── 03.hashmap/
+├── 04.string/
+├── ...
+├── ...
+├── 08.sorting+greedy/
+├── 09.linked-list/
 ```
 
 Naming convention: `<difficulty>_<number>_<problem_name>.py`
@@ -37,7 +37,7 @@ Difficulty is one of `easy`, `med`, or `hard`.
 A quick visual of how solutions are spread across topics and difficulty levels, updated as I add more problems.
 
 <p align="center">
-  <img src="assets/progress.svg" alt="DSA Topic Progress Breakdown" />
+  <img src=".github/assets/progress.svg" alt="DSA Topic Progress Breakdown" />
 </p>
 
 ## Why this repo exists
