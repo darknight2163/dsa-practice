@@ -165,6 +165,10 @@ though it's objectively easy for SWE.
   Understanding: Search space reduction.
   Why important: Teaches boundary conditions.
 
+- Median of Two Sorted Arrays
+  Understanding: Binary search on partiton index (not on values) to split two sorted arrays in equal halves without   merging.
+  Why important: Tests whether you truly understand binary search invariants rather than just pattern-matching, a common bar-raiser question for distinguishing strong candidates.
+
 
 7. STACK
 ----------------
